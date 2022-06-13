@@ -1,0 +1,27 @@
+.modal__check {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 1.7;
+}
+.modal__checkbox-link {
+	color: var(--accent-color);
+}
+.modal__icon-check {
+	display: inline-block;
+	margin-right: 8px;
+	width: 16px;
+	height: 15px;
+	border: 2px solid var(--title-text-color);
+	border-radius: 2px;
+}
+.icon-box:checked + .modal__icon-check {
+	background-color: var(--accent-color);
+	background-image: url(../images/c.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	border: transparent;
+}

@@ -1,0 +1,29 @@
+/* !Hero */
+.hero__title {
+	max-width: 650px;
+	margin: auto;
+	margin-bottom: 30px;
+
+	color: var(--primary-white-color);
+
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+}
+.hero {
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 200px 0;
+
+	background-color: var(--bgc-color-section);
+	text-align: center;
+
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/backgroundImg.jpg);
+}

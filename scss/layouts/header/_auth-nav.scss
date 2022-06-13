@@ -1,0 +1,41 @@
+.auth-nav {
+	margin-left: auto;
+}
+.auth-nav__list {
+	display: flex;
+}
+.auth-nav__item:not(:last-child) {
+	margin-right: 30px;
+}
+.auth-nav__link {
+	display: flex;
+
+	padding-top: 32px;
+	padding-bottom: 32px;
+	color: var(--primary-text-color);
+
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	transition: color var(--anmation);
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+
+/* *телефон эмейл */
+.auth-nav__icon {
+	display: block;
+	fill: currentcolor;
+	height: 16px;
+	width: 16px;
+	justify-content: center;
+	margin-right: 10px;
+
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+	}
+}

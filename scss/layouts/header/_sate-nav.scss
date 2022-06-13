@@ -1,0 +1,33 @@
+.header__site-nav {
+	display: flex;
+}
+.header__list {
+	display: flex;
+	align-items: center;
+}
+.header__item:not(:last-child) {
+	margin-right: 50px;
+}
+.header__link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--title-text-color);
+
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	transition: color var(--anmation);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+
+.header__link--current {
+	color: var(--accent-color);
+}

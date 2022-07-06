@@ -1,13 +1,22 @@
 .logo {
-	display: flex;
-	align-items: center;
-	margin-right: 93px;
+	@media screen and (min-width: 768px) {
+		// margin-top: 60px;
+		margin-right: 88px;
+		display: flex;
+		align-items: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 93px;
+		font-size: 26px;
+	}
 
 	color: var(--accent-color);
 
 	font-family: Raleway, sans-serif;
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 24px;
+
 	line-height: 1.2;
 	text-decoration: none;
 
@@ -17,4 +26,15 @@
 }
 .logo__text--color {
 	color: var(--primary-white-color);
+}
+.logo--position {
+	@media screen and (min-width: 1200px) {
+		margin-top: 60px;
+	}
+	text-align: center;
+	display: block;
+}
+.logo--position-header {
+	padding-top: 16px;
+	padding-bottom: 16px;
 }

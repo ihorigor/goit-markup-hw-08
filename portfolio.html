@@ -25,45 +25,79 @@
 			<div class="container">
 				<div class="header__flex-container">
 					<nav class="header__site-nav">
-						<a class="logo" href="./index.html"
+						<a class="logo logo--position-header" href="./index.html"
 							>Web<span class="logo__text">Studio</span></a
 						>
-						<ul class="header__list">
-							<li class="header__item">
-								<a class="header__link" href="./index.html">Студия</a>
-							</li>
-							<li class="header__item">
-								<a
-									class="header__link header__link--current"
-									href="./portfolio.html"
-									>Портфолио</a
-								>
-							</li>
-							<li class="header__item">
-								<a class="header__link" href="">Контакты</a>
-							</li>
-						</ul>
-					</nav>
 
-					<div class="auth-nav">
-						<ul class="auth-nav__list">
-							<li class="auth-nav__item">
-								<a class="auth-nav__link" href="emailto:info@devstudio.com">
-									<svg class="auth-nav__icon">
-										<use href="./images/sprite.svg#mail"></use></svg
-									>info@devstudio.com
-								</a>
-							</li>
-							<li class="auth-nav__item">
-								<a class="auth-nav__link" href="tel:+380961111111">
-									<svg class="auth-nav__icon">
-										<use href="./images/sprite.svg#tel"></use>
-									</svg>
-									+38 096 111 11 11</a
-								>
-							</li>
-						</ul>
-					</div>
+						<button
+							type="button"
+							class="menu-btn"
+							data-menu-button
+							aria-expanded="false"
+							aria-controls="menu-container"
+						>
+							<svg width="20" height="20" aria-label="Переключатель">
+								<use class="icon-menu" href="./images/sprite.svg#menu"></use>
+								<use
+									class="icon-cross"
+									href="./images/sprite.svg#close-menu"
+								></use>
+							</svg>
+						</button>
+						<div class="menu-container" id="menu-container" data-menu>
+							<ul class="header__list">
+								<li class="header__item">
+									<a class="header__link" href="./index.html">Студия</a>
+								</li>
+								<li class="header__item">
+									<a
+										class="header__link header__link--current"
+										href="./portfolio.html"
+										>Портфолио</a
+									>
+								</li>
+								<li class="header__item">
+									<a class="header__link" href="">Контакты</a>
+								</li>
+							</ul>
+							<div class="auth-nav">
+								<ul class="auth-nav__list">
+									<li class="auth-nav__item">
+										<a
+											class="auth-nav__link auth-nav__link--color"
+											href="tel:+380961111111"
+										>
+											<svg class="auth-nav__icon">
+												<use href="./images/sprite.svg#tel"></use>
+											</svg>
+											+38 096 111 11 11</a
+										>
+									</li>
+									<li class="auth-nav__item">
+										<a class="auth-nav__link" href="emailto:info@devstudio.com">
+											<svg class="auth-nav__icon">
+												<use href="./images/sprite.svg#mail"></use></svg
+											>info@devstudio.com
+										</a>
+									</li>
+								</ul>
+							</div>
+							<ul class="header__menu-list">
+								<li>
+									<a class="header__social" href="">Instagram</a>
+								</li>
+								<li>
+									<a class="header__social" href="">Twitter</a>
+								</li>
+								<li>
+									<a class="header__social" href="">Facebook</a>
+								</li>
+								<li>
+									<a class="header__social" href="">LinkedIn</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</header>
@@ -95,10 +129,14 @@
 							<a class="portfolio__link" href="">
 								<div class="portfolio__card-thumb">
 									<img
-										src="./images/portfolio/port-1.jpg"
+										src="./images/portfolio/port1.jpg"
 										alt="Веб-сайт"
 										height="294"
-										width="370"
+										width="450"
+										srcset="
+											./images/portfolio/port1.jpg   1x,
+											./images/portfolio/port1@2.jpg 2x
+										"
 									/>
 									<p class="portfolio__card-text">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -116,11 +154,15 @@
 							<a class="portfolio__link" href="">
 								<div class="portfolio__card-thumb">
 									<img
-										src="./images/portfolio/port-2.jpg"
+										src="./images/portfolio/port2.jpg"
 										alt="Постер New Orlean vs
 							Golden Star"
 										height="294"
-										width="370"
+										width="450"
+										srcset="
+											./images/portfolio/port2.jpg   1x,
+											./images/portfolio/port2@2.jpg 2x
+										"
 									/>
 									<p class="portfolio__card-text">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -140,11 +182,15 @@
 							<a class="portfolio__link" href="">
 								<div class="portfolio__card-thumb">
 									<img
-										src="./images/portfolio/port-3.jpg"
+										src="./images/portfolio/port3.jpg"
 										alt="Приложение Ресторан
 							Seafood"
 										height="294"
-										width="370"
+										width="450"
+										srcset="
+											./images/portfolio/port3.jpg   1x,
+											./images/portfolio/port3@2.jpg 2x
+										"
 									/>
 									<p class="portfolio__card-text">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -162,10 +208,14 @@
 							<a class="portfolio__link" href="">
 								<div class="portfolio__card-thumb">
 									<img
-										src="./images/portfolio/port-4.jpg"
+										src="./images/portfolio/port4.jpg"
 										alt="Проект Prime"
 										height="294"
-										width="370"
+										width="450"
+										srcset="
+											./images/portfolio/port4.jpg   1x,
+											./images/portfolio/port4@2.jpg 2x
+										"
 									/>
 									<p class="portfolio__card-text">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -183,10 +233,14 @@
 							<a class="portfolio__link" href="">
 								<div class="portfolio__card-thumb">
 									<img
-										src="./images/portfolio/port-5.jpg"
+										src="./images/portfolio/port5.jpg"
 										alt="Проект Boxes"
 										height="294"
-										width="370"
+										width="450"
+										srcset="
+											./images/portfolio/port5.jpg   1x,
+											./images/portfolio/port5@2.jpg 2x
+										"
 									/>
 									<p class="portfolio__card-text">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -205,11 +259,15 @@
 							<a class="portfolio__link" href="">
 								<div class="portfolio__card-thumb">
 									<img
-										src="./images/portfolio/port-6.jpg"
+										src="./images/portfolio/port6.jpg"
 										alt="Inspiration has no
 							Borders"
 										height="294"
-										width="370"
+										width="450"
+										srcset="
+											./images/portfolio/port6.jpg   1x,
+											./images/portfolio/port6@2.jpg 2x
+										"
 									/>
 									<p class="portfolio__card-text">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -228,11 +286,15 @@
 							<a class="portfolio__link" href="">
 								<div class="portfolio__card-thumb">
 									<img
-										src="./images/portfolio/port-7.jpg"
+										src="./images/portfolio/port7.jpg"
 										alt="Издание Limited
 							Edition"
 										height="294"
-										width="370"
+										width="450"
+										srcset="
+											./images/portfolio/port7.jpg   1x,
+											./images/portfolio/port7@2.jpg 2x
+										"
 									/>
 									<p class="portfolio__card-text">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -251,10 +313,14 @@
 							<a class="portfolio__link" href="">
 								<div class="portfolio__card-thumb">
 									<img
-										src="./images/portfolio/port-8.jpg"
+										src="./images/portfolio/port8.jpg"
 										alt="Проект LAB"
 										height="294"
-										width="370"
+										width="450"
+										srcset="
+											./images/portfolio/port8.jpg   1x,
+											./images/portfolio/port8@2.jpg 2x
+										"
 									/>
 									<p class="portfolio__card-text">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -273,11 +339,15 @@
 							<a class="portfolio__link" href="">
 								<div class="portfolio__card-thumb">
 									<img
-										src="./images/portfolio/port-9.jpg"
+										src="./images/portfolio/port9.jpg"
 										alt="Growing
 									Business"
 										height="294"
-										width="370"
+										width="450"
+										srcset="
+											./images/portfolio/port9.jpg 1x,
+											./images/portfolio/port9.jpg 2x
+										"
 									/>
 									<p class="portfolio__card-text">
 										Ресурс предлагает комплексные предложения с разным уровнем
@@ -302,7 +372,7 @@
 			<div class="container">
 				<div class="footer__flex-container">
 					<div class="footer__logo-address">
-						<a class="logo" href="./index.html"
+						<a class="logo logo--position" href="./index.html"
 							>Web<span class="logo__text logo__text--color">Studio</span></a
 						>
 						<address class="footer__address">
@@ -381,7 +451,7 @@
 					<form class="footer__distribution">
 						<h3 class="footer__title">Подпишитесь на рассылку</h3>
 
-						<label>
+						<label class="footer__label">
 							<input
 								class="footer__email"
 								name="emil"
@@ -396,5 +466,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

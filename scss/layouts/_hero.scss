@@ -1,29 +1,88 @@
 /* !Hero */
 .hero__title {
-	max-width: 650px;
+	font-size: 26px;
+	line-height: 1.62;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	text-align: center;
+	max-width: 360px;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+		line-height: 1.36;
+		max-width: 650px;
+	}
+
 	margin: auto;
 	margin-bottom: 30px;
 
 	color: var(--primary-white-color);
-
-	font-weight: 900;
-	font-size: 44px;
-	line-height: 1.36;
-	text-transform: uppercase;
-	letter-spacing: 0.06em;
 }
 .hero {
-	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 200px 0;
-
-	background-color: var(--bgc-color-section);
 	text-align: center;
 
+	// padding: 200px 0;
+	padding-top: 118px;
+	max-width: 576px;
+
+	height: 400px;
+	background-color: var(--bgc-color-section);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-image: linear-gradient(
 			rgba(47, 48, 58, 0.4),
 			rgba(47, 48, 58, 0.4)
 		),
-		url(../images/backgroundImg.jpg);
+		url(../images/header-img/header-img-mob.jpg);
+
+	@media (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../images/header-img/header-img-mob@2x.jpg);
+	}
+	@media screen and (min-width: 577px) {
+		max-width: 960px;
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../images/header-img/header-img-tab.jpg);
+		@media (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/header-img/header-img-tab@2x.jpg);
+		}
+	}
+	@media screen and (min-width: 961px) {
+		max-width: 1600px;
+		background-image: linear-gradient(
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../images/header-img/header-img-des.jpg);
+		@media (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/header-img/header-img-des@2x.jpg);
+		}
+	}
 }

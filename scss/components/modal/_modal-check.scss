@@ -2,17 +2,25 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	margin-top: 20px;
-	font-size: 14px;
-	line-height: 1.7;
+	margin-bottom: 30px;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: 1.7;
+	}
+	font-size: 12px;
+	line-height: 1.16;
 }
 .modal__checkbox-link {
 	color: var(--accent-color);
 }
 .modal__icon-check {
 	display: inline-block;
+	margin-left: -3px;
 	margin-right: 8px;
-	width: 16px;
+	width: 15px;
 	height: 15px;
 	border: 2px solid var(--title-text-color);
 	border-radius: 2px;

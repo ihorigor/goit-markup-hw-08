@@ -11,13 +11,11 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	@media screen and (max-width: 1199px) {
-		padding-top: 60px;
-		padding-bottom: 60px;
-	}
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 .footer__logo-address {
-	margin-bottom: 60px;
+	// margin-bottom: 60px;
 	@media screen and (max-width: 1199px) {
 		text-align: center;
 	}
@@ -38,10 +36,23 @@
 
 	color: var(--text-color-a-canal);
 	transition: color var(--anmation);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
 }
 .footer__link--color-text {
 	color: var(--primary-white-color);
 }
+
+.footer__list {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
+}
+
+.foot
 /* *подпишись, follow */
 .footer__label {
 	@media screen and (max-width: 1199px) {
@@ -50,10 +61,9 @@
 }
 .footer__social {
 	@media screen and (min-width: 1200px) {
-		margin-top: 72px;
 		margin-left: 70px;
 	}
-	margin-bottom: 60px;
+	// margin-bottom: 60px;
 }
 .footer__title {
 	margin-bottom: 20px;
@@ -74,7 +84,7 @@
 
 .footer__distribution {
 	@media screen and (min-width: 1200px) {
-		margin-top: 72px;
+		// margin-top: 72px;
 		margin-left: 84px;
 	}
 }
@@ -98,4 +108,9 @@
 	background: var(--bgc-color-section);
 	outline: none;
 	color: var(--primary-white-color);
+}
+.footer__social {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
 }

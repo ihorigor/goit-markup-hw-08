@@ -215,15 +215,35 @@
 					<h2 class="section__title">Наша команда</h2>
 					<ul class="team__list">
 						<li class="team__item">
-							<img
-								srcset="
-									./images/team/team-ihor.jpg   1x,
-									./images/team/team-ihor@2.jpg 2x
-								"
-								src="./images/team/taem-ihor.jpg"
-								alt="Игорь Демьяненко"
-								width="450"
-							/>
+							<picture>
+								<source
+									srcset="
+										./img/desk/index/team/ihor-des.jpg     1x,
+										./img/desk/index/team/ihor-des-@2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="
+										./img/tab/index/team/ihor-tab.jpg    1x,
+										./img/tab/index/team/ihor-tab@2x.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="
+										./img/mob/index/team/ihor-mob.jpg    1x,
+										./img/mob/index/team/ihor-mob@2x.jpg 2x
+									"
+									media="(min-width: 320px)"
+								/>
+								<img
+									src="./img/desk/index/team/ihor-des.jpg"
+									alt="Игорь Демьяненко"
+									width="450"
+								/>
+							</picture>
+
 							<div class="team__card">
 								<h3 class="team__title">Игорь Демьяненко</h3>
 								<p class="team__text" lang="en">Product Designer</p>

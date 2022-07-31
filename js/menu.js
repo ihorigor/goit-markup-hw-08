@@ -12,3 +12,6 @@
 		mobileMenuRef.classList.toggle('is-open');
 	});
 })();
+
+const x = ['dad', 'adawda', 'adwdsdawd'];
+console.log(x[1].length);

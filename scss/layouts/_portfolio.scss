@@ -46,6 +46,10 @@
 }
 
 .portfolio__item {
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
 	@media screen and (min-width: 768px) {
 		margin: 15px;
 		width: calc((100% - 4 * 15px) / 2);

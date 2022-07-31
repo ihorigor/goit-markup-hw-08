@@ -7,7 +7,7 @@
 		width: 20px;
 		height: 20px;
 
-		fill: currentColor;
+		fill: #afb1b8;
 
 		&--color {
 			fill: var(--primary-white-color);
@@ -31,20 +31,21 @@
 
 .social-network__link {
 	display: flex;
-	color: var(--primary-text-color);
+
 	width: 44px;
 	height: 44px;
 	justify-content: center;
 	align-items: center;
 	transition: color var(--anmation);
 
-	&:hover,
-	&:focus {
-		color: var(--primary-white-color);
-	}
 	&--bgc {
 		background-color: rgba(255, 255, 255, 0.1);
 		border-radius: 50%;
 		transition: background-color var(--accent-color);
 	}
+}
+
+.social-network__item:hover .social-network__icon,
+.social-network__item:focus .social-network__icon {
+	fill: var(--primary-white-color);
 }

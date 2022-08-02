@@ -11,6 +11,14 @@
 		align-items: center;
 	}
 }
+.header__item {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 32px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
 .header__item:not(:last-child) {
 	margin-right: 50px;
 }
@@ -29,7 +37,6 @@
 		font-size: 40px;
 		line-height: 1.17;
 		padding: 0;
-		margin-bottom: 32px;
 	}
 
 	transition: color var(--anmation);

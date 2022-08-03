@@ -4,18 +4,21 @@
 
 	font-weight: 700;
 	font-size: 20px;
-	@media screen and (min-width: 1200px) {
-		line-height: 1.5;
-	}
+
 	line-height: 0.9;
 	text-align: center;
 
 	color: var(--title-text-color);
 }
 .modal__conteiner {
-	padding-right: 40px;
+	@media screen and (min-width: 1200px) {
+		padding-right: 40px;
+		padding-bottom: 40px;
+		padding-left: 40px;
+	}
+	padding-right: 15px;
 	padding-bottom: 40px;
-	padding-left: 40px;
+	padding-left: 15px;
 }
 
 .modal__text {

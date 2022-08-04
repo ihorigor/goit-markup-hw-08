@@ -13,14 +13,14 @@
 	width: 100%;
 	@media screen and (max-width: 767px) {
 		display: none;
-		position: absolute;
+		position: fixed;
 		overflow: hidden;
 
-		top: 100%;
+		top: 0;
 		left: 0;
-		height: 600px;
+		height: 100%;
 
-		z-index: 8;
+		// z-index: 8;
 
 		padding: 18px 0 48px 40px;
 		background: #ffffff;

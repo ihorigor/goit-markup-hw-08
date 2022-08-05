@@ -710,6 +710,12 @@ img {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .header__list {
+    margin-bottom: 0;
+  }
+}
+
 .auth-nav {
   margin-left: auto;
 }
